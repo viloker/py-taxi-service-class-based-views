@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3 class="h3">{{driver}}</h3>
+{% for car in driver.cars.all %}
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Model</th>
+    <th scope="col">Manufacturer</th>
+  </tr>
+  </thead>
+  <tr>
+    <td scope="row">{{car.model}}</td>
+    <td scope="row">{{car.manufacturer}}</td>
+  </tr>
+</table>
+{% empty %}
+<p>Driver doesn't have car</p>
+{% endfor %}
+{% endblock %}
