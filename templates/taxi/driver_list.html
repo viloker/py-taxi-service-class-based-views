@@ -15,8 +15,10 @@
     <td scope="row">{{driver.license_number}}</td>
   </tr>
     {% empty %}
-    <p>No driver</p>
+  <tr>
+    <td scope="row">No driver</td>
+    <td scope="row">No driver</td>
     {% endfor %}
-
+  </tr>
 </table>
 {% endblock %}

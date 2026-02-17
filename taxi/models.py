@@ -1,7 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from django.db.models import CharField
-from django.urls import reverse
 
 
 class Manufacturer(models.Model):
@@ -11,7 +9,7 @@ class Manufacturer(models.Model):
     class Meta:
         ordering = ("name",)
 
-    def __str__(self) -> CharField:
+    def __str__(self) -> str:
         return self.name
 
 

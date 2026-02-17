@@ -14,7 +14,10 @@
     <td scope="row">{{ manufacturer.country }}</td>
   </tr>
   {% empty %}
-  <p>No manufacturers</p>
+  <tr>
+    <td scope="row">No manufacturers</td>
+    <td scope="row">No manufacturers</td>
+  </tr>
   {% endfor %}
 </table>
 {% endblock %}
