@@ -16,7 +16,11 @@
     <td scope="row">{{car.manufacturer}}</td>
   </tr>
   {% empty %}
-  <p>No cars</p>
+  <tr>
+    <td scope="row">No car id</td>
+    <td scope="row">No model</td>
+    <td scope="row">No manufacturer</td>
+  </tr>
   {% endfor %}
 
 </table>
